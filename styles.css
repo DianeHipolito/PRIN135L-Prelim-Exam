@@ -106,6 +106,9 @@ textarea, select, .input-data {
     background-color: #d50000;
 }
 
+section{
+    scroll-margin-top: 120px;
+}
 
 @media screen and (max-width: 426px) {
     .navigator {
@@ -157,10 +160,7 @@ textarea, select, .input-data {
         overflow-x: auto;
         white-space: nowrap;
         margin-bottom: 20px;
-    }
-
-    section {
-        scroll-margin-top: 120px;  /* Adjust this value to match the height of your fixed navigation */
+        scroll-margin-top: 120px;
     }
 
 }   
