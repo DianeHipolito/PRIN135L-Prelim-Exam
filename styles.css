@@ -117,22 +117,4 @@ textarea, select, .input-data {
         padding: 20px;
         margin-bottom: 20px;
     }
-}
-
-.navigator a {
-    display: block;
-    padding: 10px 20px;
-    text-align: left;
-    color: #818181;
-    font-size: 18px;
-}
-
-.navigator a:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.navigator a.active {
-    background-color: #000;
-    color: #fff;
-}
+}   
