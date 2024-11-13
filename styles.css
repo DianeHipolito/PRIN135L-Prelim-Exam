@@ -3,7 +3,7 @@
     background-color: rgb(241, 241, 241);
 }
 
-.navigator{
+.navigator {
     height: 100%;
     width: 280px;
     position: fixed;
@@ -11,69 +11,104 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
+    overflow-y: auto;
     border-right: 3px solid #c1c1c1;
 }
 
-.nav-title{
+.nav-title {
     text-align: center;
     margin-left: 5px;
 }
 
-.li-nav{
+.li-nav {
     text-decoration: none;
     color: #818181;
     display: block;
     padding-left: 10px;
 }
 
-footer{
+footer {
     padding-left: 10px;
 }
 
-.navigator a:hover{
+.navigator a:hover {
     color: #ffff;
     background-color: #000;
 }
 
-.navigator a.active{
+.navigator a.active {
     background-color: #000;
     color: #fff;
 }
 
-main{
-    margin-left: 300px; 
+main {
+    margin-left: 300px;
     padding: 0px 10px;
 }
 
-table{
+table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 100%;
 }
 
-table, td, th{
+table, td, th {
     border: 1px solid;
     padding: 10px;
 }
 
-.img-lol{
+.img-lol {
     width: 100%;
 }
 
-textarea, select, .input-data{
+textarea, select, .input-data {
     background-color: #fff;
     color: #000;
     width: 200px;
 }
 
-.input-data{
+.input-data {
     height: 20px;
 }
 
-.btn{
+.btn {
     background-color: #ff0000;
     border-radius: 5px;
     height: 30px;
     color: #ffff;
     border-color: #ff0000;
+}
+
+@media screen and (max-width: 425px) {
+    .navigator {
+        width: 100%;
+        height: auto;
+        position: sticky;
+        overflow-y: auto; 
+        border-right: none;
+        border-bottom: 3px solid #c1c1c1;
+        top: 0;
+    }
+
+    .nav-title {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    main {
+        margin: 0; 
+        padding-top: 50px; 
+    }
+
+    table {
+        display: block; 
+        overflow-x: auto; 
+        white-space: nowrap;
+        min-width: 600px;
+    }
+
+    section {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
