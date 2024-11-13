@@ -3,6 +3,10 @@
     background-color: rgb(241, 241, 241);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navigator {
     height: 100%;
     width: 280px;
@@ -83,7 +87,7 @@ textarea, select, .input-data {
     .navigator {
         width: 100%;
         height: auto;
-        position: sticky;
+        position: fixed;
         overflow-y: auto; 
         border-right: none;
         border-bottom: 3px solid #c1c1c1;
@@ -110,5 +114,11 @@ textarea, select, .input-data {
     section {
         overflow-x: auto;
         white-space: nowrap;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    body{
+        scroll-padding-top: 60px;
     }
 }
